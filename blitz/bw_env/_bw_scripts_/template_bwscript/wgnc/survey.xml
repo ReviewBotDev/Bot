@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notification notification_id="%(notification_id)s" valid_till="%(valid_till)s" ver="2.0">
+   <actions>
+      <browse name="open_internal_browser" target="internal" href="%(link)s" />
+      <callback name="survey_accept" purge="true" />
+      <callback name="survey_decline" purge="false" />
+   </actions>
+   <gui>
+      <popup icon="text_message" priority="low" bg="poll">
+         <topic>Примите участие в опросе POPUP</topic>
+         <body><![CDATA[Приглашаем принять участие в опросе и высказать своё мнение о World of Tanks.\nСделаем игру лучше! POPUP]]></body>
+         <buttons>
+            <button actions="survey_accept,open_internal_browser">К опросу POPUP</button>
+         </buttons>
+      </popup>
+      <poll hidden="false" name="survey">
+         <topic>Примите участие в опросе POLL</topic>
+         <body><![CDATA[Приглашаем принять участие в опросе и высказать своё мнение о World of Tanks.\nСделаем игру лучше! POLL]]></body>
+         <buttons>
+            <button actions="survey_accept,open_internal_browser">К опросу POLL</button>
+            <button actions="survey_decline">Отказаться POLL</button>
+         </buttons>
+      </poll>
+   </gui>
+</notification>
