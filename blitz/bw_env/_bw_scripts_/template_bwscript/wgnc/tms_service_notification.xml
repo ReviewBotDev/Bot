@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notification ver="2.0" valid_till="%(valid_till)s">
+    <proxy_data>
+        <type>%(notification_type)s</type>
+        <timestamp>%(timestamp)s</timestamp>
+        <team_id>%(team_id)s</team_id>
+        <tournament_id>%(tournament_id)s</tournament_id>
+    </proxy_data>
+</notification>

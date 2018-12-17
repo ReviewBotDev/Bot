@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notification notification_id="%(notification_id)s" ver="2.0">
+   <proxy_data>
+      <type>clans_wotb_clan_level_up</type>
+      <clan_id>%(clan_id)s</clan_id>
+      <clan_name>%(clan_name)s</clan_name>
+      <clan_tag>%(clan_tag)s</clan_tag>
+      <clan_level>%(clan_level)s</clan_level>
+   </proxy_data>
+</notification>
